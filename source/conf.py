@@ -91,7 +91,7 @@ html_sidebars = {
 #---sphinx-themes-----
 import guzzle_sphinx_theme
 
-html_theme_path = ["./guzzle_sphinx_theme/theme.conf"]
+html_theme_path = guzzle_sphinx_theme.html_theme_path()
 html_theme = 'guzzle_sphinx_theme'
 
 # Register the theme as an extension to generate a sitemap.xml
