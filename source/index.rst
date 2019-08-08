@@ -13,12 +13,11 @@ Description 1:
 ###############
  Your content here! Your content here! Your content here! Your content here! Your content here! Your content here! Your content here! Your content here! Your content here! Your content here! Your content here! Your content here! Your content here! Your content here! Your content here! Your content here! Your content here! Your content here! Your content here! Your content here! Your content here! Your content here! Your content here! Your content here! Your content here! Your content here! Your content here! Your content here! Your content here! Your content here! Your content here! Your content here! Your content here! Your content here! Your content here! Your content here! Your content here! Your content here! Your content here! Your content here! Your content here! Your content here! Your content here! Your content here! Your content here! Your content here! Your content here! Your content here! Your content here! Your content here! Your content here! Your content here! Your content here! Your content here! Your content here! Your content here! Your content here! Your content here! Your content here! Your content here! Your content here! Your content here! Your content here! Your content here! Your content here! Your content here! Your content here! Your content here! Your content here! Your content here! Your content here! Your content here! Your content here! Your content here! Your content here! Your content here! Your content here! Your content here! Your content here! Your content here! Your content here! Your content here! Your content here! Your content here! Your content here! Your content here! Your content here! Your content here! Your content here! Your content here! Your content here! Your content here! Your content here! Your content here! Your content here! Your content here! Your content here! Your content here! Your content here! Your content here! Your content here! Your content here! Your content here! Your content here! Your content here! Your content here! Your content here! Your content here! Your content here! Your content here! Your content here! Your content here! Your content here! Your content here!
 
-Table of content:
-##########################################
 
 
 .. toctree::
-   :maxdepth: 4
+   :maxdepth: 2
+   :caption: Table of Contents
 
 
 
