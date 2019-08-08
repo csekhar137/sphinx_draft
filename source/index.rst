@@ -29,24 +29,17 @@ Table of content:
 
 
 
-Our sponsors:
+Organised By:
 ##############
 
 
 
 
-|pic1|   |pic2|   |pic3|    |pic4|
+|pic1|
 
 .. |pic1| image:: scelse.png
    :width: 20%
    :height: 70px
 
-.. |pic2| image:: neri.png
-   :width: 20%
-   :height: 70px
-.. |pic3| image:: dbs.png
-   :width: 20%
-   :height: 70px 
-.. |pic4| image:: syncti.png
-   :width: 20%
-   :height: 70px 
+
+
