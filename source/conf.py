@@ -1,17 +1,5 @@
 # -*- coding: utf-8 -*-
 #
-# Configuration file for the Sphinx documentation builder.
-#
-# This file does only contain a selection of the most common options. For a
-# full list see the documentation:
-# http://www.sphinx-doc.org/en/master/config
-
-# -- Path setup --------------------------------------------------------------
-
-# If extensions (or modules to document with autodoc) are in another directory,
-# add these directories to sys.path here. If the directory is relative to the
-# documentation root, use os.path.abspath to make it absolute, like shown here.
-#
 # import os
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
@@ -19,14 +7,14 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'Microbiome_Modelling_Workshop'
-copyright = '2019, Chandrasekhar'
-author = 'Chandrasekhar'
+project = 'Sphinx-Themes template'
+copyright = '2018, sphinx-themes.org'
+author = 'sphinx-themes.org'
 
 # The short X.Y version
 version = ''
 # The full version, including alpha/beta/rc tags
-release = '1.0'
+release = '1'
 
 
 # -- General configuration ---------------------------------------------------
@@ -39,8 +27,7 @@ release = '1.0'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
-    'sphinx.ext.autodoc',
-    'sphinx.ext.intersphinx',
+    'sphinx.ext.todo',
     'sphinx.ext.githubpages',
 ]
 
@@ -66,7 +53,7 @@ language = None
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # This pattern also affects html_static_path and html_extra_path .
-exclude_patterns = []
+exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
 # The name of the Pygments (syntax highlighting) style to use.
 pygments_style = 'sphinx'
@@ -77,7 +64,6 @@ pygments_style = 'sphinx'
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = 'nature'
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
@@ -102,68 +88,11 @@ html_sidebars = {
    '**': ['globaltoc.html', 'sourcelink.html', 'searchbox.html'],
    'using/windows': ['windowssidebar.html', 'searchbox.html'],
 }
+#---sphinx-themes-----
+import guzzle_sphinx_theme
 
+html_theme_path = ["."]
+html_theme = 'guzzle_sphinx_theme'
 
-# -- Options for HTMLHelp output ---------------------------------------------
-
-# Output file base name for HTML help builder.
-htmlhelp_basename = 'Microbiome_Modelling_Workshopdoc'
-
-
-# -- Options for LaTeX output ------------------------------------------------
-
-latex_elements = {
-    # The paper size ('letterpaper' or 'a4paper').
-    #
-    # 'papersize': 'letterpaper',
-
-    # The font size ('10pt', '11pt' or '12pt').
-    #
-    # 'pointsize': '10pt',
-
-    # Additional stuff for the LaTeX preamble.
-    #
-    # 'preamble': '',
-
-    # Latex figure (float) alignment
-    #
-    # 'figure_align': 'htbp',
-}
-
-# Grouping the document tree into LaTeX files. List of tuples
-# (source start file, target name, title,
-#  author, documentclass [howto, manual, or own class]).
-latex_documents = [
-    (master_doc, 'Microbiome_Modelling_Workshop.tex', 'Microbiome\\_Modelling\\_Workshop Documentation',
-     'Chandrasekhar', 'manual'),
-]
-
-
-# -- Options for manual page output ------------------------------------------
-
-# One entry per manual page. List of tuples
-# (source start file, name, description, authors, manual section).
-man_pages = [
-    (master_doc, 'microbiome_modelling_workshop', 'Microbiome_Modelling_Workshop Documentation',
-     [author], 1)
-]
-
-
-# -- Options for Texinfo output ----------------------------------------------
-
-# Grouping the document tree into Texinfo files. List of tuples
-# (source start file, target name, title, author,
-#  dir menu entry, description, category)
-texinfo_documents = [
-    (master_doc, 'Microbiome_Modelling_Workshop', 'Microbiome_Modelling_Workshop Documentation',
-     author, 'Microbiome_Modelling_Workshop', 'One line description of project.',
-     'Miscellaneous'),
-]
-
-
-# -- Extension configuration -------------------------------------------------
-
-# -- Options for intersphinx extension ---------------------------------------
-
-# Example configuration for intersphinx: refer to the Python standard library.
-intersphinx_mapping = {'https://docs.python.org/': None}
+# Register the theme as an extension to generate a sitemap.xml
+extensions.append("guzzle_sphinx_theme")
